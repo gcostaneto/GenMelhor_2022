@@ -1,1 +1,71 @@
-# GenMelhor_2022
+
+# Overview
+
+A tipificação/tipagem de ambientes (environmental typing = envirotyping) é um ramo da ciência de dados que visa compreender as condições ambientais de uma dada localidade para assim relacioná-las às causas não-genéticas da adaptação dos organismos vivos. Por condições ambientais entendemos todo o “meio” em que um dado organismo se encontra, assim como sua atuação em diferentes níveis de estudo, desde o nível intracelular, passando por tecidos e órgãos, até contemplar todo o organismo, incluindo também o c conjunto de organismos que coexistem no mesmo espaço. O ambiente passa então a ser definido como um balanço de recursos necessários para a realização de processos biológicos, respeitando às Leis de Liebg (Lei do Minimo) e de Shelford (Limites da Tolerância) que são geneticamente definidas para cada organismo. Esse balanço de recursos vincula-se a fenômenos como expressão genica (transcrição e tradução), regulação do epigenoma, balanço hormonal entre tecidos/órgãos, atuando direta e indiretamente na expressão fenotípica final do produto de interesse (e.g., produção de grãos, produção de madeira). Além da disponibilidade de recursos no meio, a qualidade de um ambiente também é definida pela capacidade do organismo em utilizá-los, o que depende de fatores como seu atual estágio de desenvolvimento (e.g., fenologia em plantas) e os “limites genéticos” que definem as zonas de absorção ótima, de estresse (por falta ou por excesso do recurso) e morte (estresse drástico e irreversível), o que vincula-se a fatores pletóricos decorrentes dos mecanismos de adaptação do organismo. Essas zonas irão definir o que é um estresse do que é uma condição ótima de expressão do potencial genético. Portanto, é impossível definir o ambiente particular de uma espécie sem considerar os fatores intrínsecos da espécie, definidos sobretudo por sua genética e fisiologia. Duas espécies distintas convivendo no mesmo local não irão experienciar o mesmo ambiente, mesmo que as condições de solo, chuva ou temperatura sejam as mesmas. Portanto, há um ambiente “meteorológico” e um ambiente “agrometereologico”, ou melhor, vinculado á ecofisiologia do organismo. Nesse sentido, trata-se de uma ciência de dados que depende de conhecimentos multidisciplinares para atingir seu potencial e máxima resolução, no entanto tem aplicabilidade mesmo focando-se nas condições edafoclimaticas e os estresses bióticos e abióticos vinculados as mesmas.
+
+
+Em Costa-Neto et al. (2021), apresentamos o pacote EnvRtype R, um novo kit de ferramentas desenvolvido para interagir dados de envirotipagem em larga escala (enviromics) em genética quantitativa. Não se tratam de conceitos novos, muito pelo contrario, sua aplicação remonta aos anos 1960s. Buscamos no pacote organizar uma “linearidade de raciocínio” para padronizar ao máximo o que se trata “envirotyping”, evitando erros comuns de coleta e processamento de dados, assim como seu uso pouco consciente da fisiologia do organismo.
+
+Para iniciar um pipeline de ambientação amigável, este pacote oferece: (1) ferramentas de sensoriamento remoto para coleta (funções get_weather e extract_GIS) e processamento de variáveis ecofisiológicas (funções param_temperature, param_radiation e param_atmospheric) de dados ambientais brutos em locais únicos ou em todo o mundo; (2) caracterização ambiental por meio de tipagem de ambientes e perfilamento de descritores de qualidade ambiental (função env_typing), além da coleta de covariáveis ambientais como descritores quantitativos para fins preditivos (função W_matrix); e (3) identificação de similaridade ambiental que pode ser usada como um kernel baseado em ambiente (função env_typing) na seleção assistida por modelos preditivos baseados em genômica (ou simplesmente, predição genômica, GP), visando assim aumentar o conhecimento ecofisiológico nestes modelos, assim como emular efeitos de normas de reação (funções get_kernel e kernel_model). Neste curso, espero destacar a importância dos conceitos de mineração de literatura no ajuste fino dos parâmetros de ambiente para cada espécie de planta e ambientes de cultivo alvo. Em seguida, exemplificar seu uso para criar redes de envirotipagem em escala global e integrar a modelagem de normas de reação em GP também são descritos.
+
+![image](https://user-images.githubusercontent.com/25282742/161685576-1f113776-be17-463b-93c8-3bf4f2799b95.png)
+
+
+# Forum de Debate 
+
+Sugiro a todos que usem e abusem do forum. As vezes alguma duvida pode ja ter sido esclarecida. Ou podem nascer novos debates e ideias.
+
+> [Getting help](https://groups.google.com/u/1/g/envrtype)
+
+
+# Software
+
+Podemos instalar o pacote usando a funcao install_git do pacote devtools:
+
+```{r, eval=FALSE}
+library(devtools)
+install_github('allogamous/EnvRtype')
+library(EnvRtype)
+```
+
+Porem um pacote no R nada mais é do que um compilado de funçoes, que podem ser baixads usando a funçao source() tais como:
+
+```{r, eval=FALSE}
+source("https://raw.githubusercontent.com/allogamous/EnvRtype/master/sourceEnvRtype.R")
+```
+
+Assim como apenas algumas funçoes em especifico:
+
+```{r, eval=FALSE}
+
+source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/AtmosphericPAram.R')
+source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/SradPARAM.R')
+source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/SupportFUnction.R')
+source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/EnvTyping.R')
+source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/Wmatrix.R')
+source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/covfromraster.R')
+source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/envKernel.R')
+source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/gdd.R')
+source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/getGEenriched.R')
+source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/get_weather_gis.R')
+source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/processWTH.R')
+source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/met_kernel_model.R')
+source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/summary_weather.R')
+```
+ok, it is ugly, but solves it.
+
+
+**Outros pacotes que podem ser uteis para nossos estudos**
+
+```{r, eval=FALSE}
+source("https://raw.githubusercontent.com/gcostaneto/Funcoes_naive/master/instpackage.R")
+inst.package(c("superheat","FactoMineR","tidyverse","ggplot2","reshape2","plyr"))
+```
+
+# Modulos de uma plataforma de Envirotyping
+
+[MODULE 1](https://github.com/gcostaneto/EnvRtype_course/blob/main/MODULE1.md) - Coleta Remota de Dados
+
+[MODULE 2](https://github.com/gcostaneto/EnvRtype_course/blob/main/MODULE2.md) - Caracterizacao e tipiicaçao de ambientes
+
+[MODULE 3](https://github.com/gcostaneto/EnvRtype_course/blob/main/MODULE3.md) - Modelos Preditivos baseados em "estruturas de relacionamento" ambiental/genetica
