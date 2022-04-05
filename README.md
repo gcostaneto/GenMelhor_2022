@@ -1,5 +1,8 @@
 
+
 # Visao Geral: O que é "Envirotyping"? e "Enviromics"?
+
+Por Germano Costa-Neto, 25-02-2022
 
 A tipificação/tipagem de ambientes (environmental typing = envirotyping) é um ramo da ciência de dados que visa compreender as condições ambientais de uma dada localidade para assim relacioná-las às causas não-genéticas da adaptação dos organismos vivos. Por condições ambientais entendemos todo o “meio” em que um dado organismo se encontra, assim como sua atuação em diferentes níveis de estudo, desde o nível intracelular, passando por tecidos e órgãos, até contemplar todo o organismo, incluindo também o c conjunto de organismos que coexistem no mesmo espaço. O ambiente passa então a ser definido como um balanço de recursos necessários para a realização de processos biológicos, respeitando às Leis de Liebg (Lei do Minimo) e de Shelford (Limites da Tolerância) que são geneticamente definidas para cada organismo. Esse balanço de recursos vincula-se a fenômenos como expressão genica (transcrição e tradução), regulação do epigenoma, balanço hormonal entre tecidos/órgãos, atuando direta e indiretamente na expressão fenotípica final do produto de interesse (e.g., produção de grãos, produção de madeira). 
 
