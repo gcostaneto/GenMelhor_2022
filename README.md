@@ -7,12 +7,13 @@ Além da disponibilidade de recursos no meio, a qualidade de um ambiente também
 
 
 Em Costa-Neto et al. (2021), apresentamos o pacote EnvRtype R, um novo kit de ferramentas desenvolvido para interagir dados de "envirotipagem" em larga escala (enviromics) em genética quantitativa. Ou seja, para o estudo do envirome das espécies ou de uma dada localidade. Na linguagem do melhoramento de plantas, o envirome pode ser definido como: 
+
 > "conjunto de possibilidades ambientais que o germoplasma do programa pode enfrentar, desde os estagios de *breeding*, pasando pelo *post-breeding* até o desenvolvimento e alocaçao dos produtos na regiao alvo de interesse." 
 Não se tratam de conceitos novos, muito pelo contrario, sua aplicação remonta aos anos 1960s. Buscamos no pacote organizar uma “linearidade de raciocínio” para padronizar ao máximo o que se trata “envirotyping”, evitando erros comuns de coleta e processamento de dados, assim como seu uso pouco consciente da fisiologia do organismo" (definiçao adaptada de Costa-Neto et al., 2021 e Costa-Neto & Fritsche-Neto, 2021)
 
 Para iniciar um pipeline de ambientação amigável, este pacote oferece: (1) ferramentas de sensoriamento remoto para coleta (funções get_weather e extract_GIS) e processamento de variáveis ecofisiológicas (funções param_temperature, param_radiation e param_atmospheric) de dados ambientais brutos em locais únicos ou em todo o mundo; (2) caracterização ambiental por meio de tipagem de ambientes e perfilamento de descritores de qualidade ambiental (função env_typing), além da coleta de covariáveis ambientais como descritores quantitativos para fins preditivos (função W_matrix); e (3) identificação de similaridade ambiental que pode ser usada como um kernel baseado em ambiente (função env_typing) na seleção assistida por modelos preditivos baseados em genômica (ou simplesmente, predição genômica, GP), visando assim aumentar o conhecimento ecofisiológico nestes modelos, assim como emular efeitos de normas de reação (funções get_kernel e kernel_model). Neste curso, espero destacar a importância dos conceitos de mineração de literatura no ajuste fino dos parâmetros de ambiente para cada espécie de planta e ambientes de cultivo alvo. Em seguida, exemplificar seu uso para criar redes de envirotipagem em escala global e integrar a modelagem de normas de reação em GP também são descritos.
 
-![image](https://user-images.githubusercontent.com/25282742/161685576-1f113776-be17-463b-93c8-3bf4f2799b95.png)
+
 
 
 # Forum de Debate 
