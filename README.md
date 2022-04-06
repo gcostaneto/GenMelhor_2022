@@ -1,4 +1,4 @@
-<img align="center" src="/PGMP.png" width="100%" height="100%">
+<img align="center" src="/genmelhor.png" width="100%" height="100%">
 
 # Enviromics em Melhoramento de Plantas - Workshop
 
@@ -13,7 +13,9 @@ email: germano.cneto@gmail.com
 
 * Slides estarão disponiveis (em pdf) neste **link** após o término do curso (até o dia 12 de Abril, depois ficarão indisponiveis)
 
-* Usufrua do nosso forum online [link](https://groups.google.com/g/genmelhor_2022) para fazer perguntas sobre o pacote e sobre "enviromics" de um modo geral. Esse forum é exclusivo para os participantes do curso e ficará aberto "para sempre". Perguntas/criticas/sugestoes acessando especificamente sobre o pacote podem tambem ser feitas no [link](https://groups.google.com/g/melhoramento_precisao_envirotyping) 
+* Usufrua do nosso forum online [link](https://groups.google.com/g/genmelhor_2022) para fazer perguntas sobre o pacote e sobre "enviromics" de um modo geral. Esse forum é exclusivo para os participantes do curso e ficará aberto "para sempre". Codigos detalhados (em R) tambem serao disponibilizados nesse forum.
+ 
+* Perguntas/criticas/sugestoes acessando especificamente sobre o pacote podem tambem ser feitas no [link](https://groups.google.com/g/melhoramento_precisao_envirotyping) 
 
 
 # Visao Geral: O que é "Envirotyping"? e "Enviromics"?
