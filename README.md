@@ -35,7 +35,7 @@ Além da disponibilidade de recursos no meio, a qualidade de um ambiente também
 Diante do que foi exposto, podemos inferir que o fenômeno da interação GxA nada mais é do que um reflexo putativo (isto é, emergente) de como os diferentes genes respondem à diversidade de condições ambientais enfrentadas em uma rede experimental ou região alvo. Na figura abaixo, baseada na Lei de Shelford, podemos observar que quanto maior a diversidade ambiental, melhor é a amostragem da plasticidade fenotípica (curvas).
 
 
-<img align="center" src="/fig/rede.png" width="70%" height="70%">
+<img align="center" src="/rede.png" width="70%" height="70%">
 
 Portanto o número de ambientes não é tão relevante quanto a diversidade que estes possuem entre si. Do contrário a amostragem da “interação GxA” é *viesada* por critérios de incorreta amostragem das condições ambientais. As linhas entre os “limites ambientais” do gradiente ambiental de cada rede experimental nos mostram o que chamamos de “norma de reação”, que pode contemplar um índice ambiental vinculado à média fenotípica (no caso, desdobrando-se em adaptabilidade x estabilidade), mas também à respostas fenotípicas frente a variação de algum fator ambiental (e.g., temperatura). Portanto, o fator ambiental que apresentar a maior diversidade estará com certeza relacionado a explicação da interação GxA, enquanto os fatores ambientais com menor diversidade não terão maior impacto na variação fenotípica. Para entender esses fatores, podemos estudar a diversidade dos ambientes, mas também relacionar matematicamente diferentes fatores ambientais com as medias fenotípicas observadas nos ensaios. No primeiro caso podemos fazer isso tanto a *priori* como a *posteri*, estudando os padrões ambientais de uma certa região, o que pode, por exemplo, auxiliar no dimensionamento de uma rede experimental. A segunda técnica também permite tais inferências, porém aprofunda-se no estudo das normas de reação dos genótipos, o que pode ser útil para compreender a sensibilidade/responsividade dos genótipos aos fatores chave de uma dada região, isto é; quais genótipos respondem melhor a maiores condições de radiação, temperatura, estresse hídrico, entre outros. Essa técnica pode ser acoplada a genômica viabilizando o estudo das regiões genômicas que podem estar associadas à expressão dessas caraterísticas (Li et al., 2021).
 
@@ -64,7 +64,7 @@ Para iniciar um pipeline de ambientação amigável, este pacote oferece:
 
 Esses tópicos sao ilustrados pelos seguintes módulos (Costa-Neto et al., 2021):
 
-<img align="center" src="/fig/envrtype.png" width="70%" height="70%">
+<img align="center" src="/envrtype.png" width="70%" height="70%">
 
 # Software
 
