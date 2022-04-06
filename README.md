@@ -1,3 +1,19 @@
+<img align="center" src="/PGMP.png" width="100%" height="100%">
+
+# Enviromics em Melhoramento de Plantas - Workshop
+
+Data: 06 e 07 de Abril de 2022 - Virtual
+
+Autor: Germano Costa-Neto
+
+email: germano.cneto@gmail.com
+
+
+* Detalhes do uso do pacote EnvRtype: veja o curso em portugues/ingles neste [link](https://github.com/gcostaneto/Enviromics_Curso_PT)
+
+* Slides estarão disponiveis (em pdf) neste **link** após o término do curso (até o dia 12 de Abril, depois ficarão indisponiveis)
+
+* Usufrua do nosso forum online [link](https://groups.google.com/g/genmelhor_2022) para fazer perguntas sobre o pacote e sobre "enviromics" de um modo geral. Esse forum é exclusivo para os participantes do curso e ficará aberto "para sempre". Perguntas/criticas/sugestoes acessando especificamente sobre o pacote podem tambem ser feitas no [link](https://groups.google.com/g/melhoramento_precisao_envirotyping) 
 
 
 # Visao Geral: O que é "Envirotyping"? e "Enviromics"?
@@ -68,7 +84,7 @@ source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/processWT
 source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/met_kernel_model.R')
 source('https://raw.githubusercontent.com/allogamous/EnvRtype/master/R/summary_weather.R')
 ```
-ok, it is ugly, but solves it.
+
 
 
 **Outros pacotes que podem ser uteis para nossos estudos**
