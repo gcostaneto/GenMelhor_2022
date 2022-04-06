@@ -119,3 +119,8 @@ Abaixo estao disponiveis alguns tutorias para serem consultados de forma supleme
 [MODULE 2](https://github.com/gcostaneto/EnvRtype_course/blob/main/MODULE2.md) - Caracterizacao e tipiicaçao de ambientes
 
 [MODULE 3](https://github.com/gcostaneto/EnvRtype_course/blob/main/MODULE3.md) - Modelos Preditivos baseados em "estruturas de relacionamento" ambiental/genetica
+
+
+# Livros e Artigos Uteis
+
+Referencias bibliograficas e artigos uteis podem ser encontrados [aqui](https://github.com/gcostaneto/GEMS_R/tree/main/References)
