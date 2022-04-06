@@ -124,3 +124,8 @@ Abaixo estao disponiveis alguns tutorias para serem consultados de forma supleme
 # Livros e Artigos Uteis
 
 Referencias bibliograficas e artigos uteis podem ser encontrados [aqui](https://github.com/gcostaneto/GEMS_R/tree/main/References)
+
+# Codigos
+
+Dia 01 [conceitos basicos e coleta de dados](https://github.com/gcostaneto/GenMelhor_2022/tree/main/Dia_01) (disponivel online ate o dia 12, "pra sempre" no nosso forum")
+
