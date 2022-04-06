@@ -15,7 +15,7 @@ email: germano.cneto@gmail.com
 
 * Usufrua do nosso forum online neste [link](https://groups.google.com/g/genmelhor_2022) para fazer perguntas sobre o pacote e sobre "enviromics" de um modo geral. Esse forum é exclusivo para os participantes do curso e ficará aberto "para sempre". Codigos detalhados (em R) tambem serao disponibilizados nesse forum.
  
-* Perguntas/criticas/sugestoes acessando especificamente sobre o pacote podem tambem ser feitas no [link](https://groups.google.com/g/melhoramento_precisao_envirotyping) 
+* Perguntas/criticas/sugestoes sobre o pacote podem tambem ser feitas no forum publico do EnvRtype neste [link](https://groups.google.com/g/melhoramento_precisao_envirotyping) 
 
 
 # Visao Geral: O que é "Envirotyping"? e "Enviromics"?
