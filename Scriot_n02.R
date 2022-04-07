@@ -456,4 +456,47 @@ clusters_HCPC <- HCPC(PCA_ambientes,nb.clust = -1)
 # E SE DIVIDISSEMOS O CICLO DO CULTIVO?
 
 
+source('https://raw.githubusercontent.com/gcostaneto/EGP/main/supplementary_codes_2.R')
+
+dim(distances)
+
+SVD = N_GE(Kernel = distances,plot = T,fraction = .995,svd.print = T)
+ntrain = SVD$Ne        # N_GE
+svdGEI = distances %*% SVD$svd.v # SVD-based GEI matrix for optimize the genetic algorithm
+rownames(svdGEI) = rownames(distances)
+
+
+require(STPGA)
+TS <- GenAlgForSubsetSelectionNoTest(P = as.matrix(svdGEI), ntoselect = ntrain,
+                                     nelite = 5,mutprob = .8, niterations = 100, plotiters = F, 
+                                     lambda = 1e-5, errorstat = "PEVMEAN", mc.cores = 4)[[1]]
+
+
+TS # training set (super-optmized) consisted by some genotypes at some environments
+superheat(TS)
+
+require(tidyverse)
+ET_2 <- ET %>% filter(env %in% TS)
+ET_2 <- ET[ET$env %in% TS,]
+
+ggplot() + 
+  scale_x_discrete(expand = c(0,0))+
+  scale_y_continuous(labels = scales::percent,expand = c(0,0))+
+  geom_bar(data=ET_2, aes(y=Freq, x=env,fill=env.variable), 
+           position = "fill",stat = "identity",colour='white',width = 1,size=.2)+
+  # scale_y_continuous(labels = scales::percent,expand = c(0,0))+ 
+  coord_flip()+
+  ylab('Frequency of Occurence\n')+ 
+  xlab("\nEnvironment")+
+  labs(fill='Envirotype')+ 
+  scale_fill_manual(values = c('blue4','green4',"orange",'red'))+
+  theme(axis.title = element_text(size=19),
+        axis.text = element_text(size=15),
+        legend.text = element_text(size=12),
+        strip.text = element_text(size=20),
+        legend.title = element_text(size=17),
+        strip.background = element_rect(fill="gray95",size=1),
+        legend.position = 'right')
+
+
 
