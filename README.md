@@ -127,5 +127,10 @@ Referencias bibliograficas e artigos uteis podem ser encontrados [aqui](https://
 
 # Codigos
 
-Dia 01 [conceitos basicos e coleta de dados](https://github.com/gcostaneto/GenMelhor_2022/tree/main/Dia_01) (disponivel online ate o dia 12, "pra sempre" no nosso forum")
+
+* Dia 01 [conceitos basicos e coleta de dados](https://github.com/gcostaneto/GenMelhor_2022/tree/main/Dia_01) 
+
+* Dia 02 [caracterizacao ambiental e predidcao da GxE](https://github.com/gcostaneto/GenMelhor_2022/blob/main/Dia_02.zip)
+
+obs:(disponivel online ate o dia 12, "pra sempre" no nosso forum")
 
