@@ -11,7 +11,7 @@ email: germano.cneto@gmail.com
 
 * Detalhes do uso do pacote EnvRtype: veja o curso em portugues/ingles neste [link](https://github.com/gcostaneto/Enviromics_Curso_PT)
 
-* Slides estarão disponiveis (em pdf) neste **link** após o término do curso (até o dia 12 de Abril, depois ficarão indisponiveis)
+* Slides disponiveis (em pdf): [dia 1](https://github.com/gcostaneto/GenMelhor_2022/blob/main/Workshop_EnvRtype_GenMelhor_p1.pdf.zip) e [dia 2](https://github.com/gcostaneto/GenMelhor_2022/blob/main/Workshop_EnvRtype_GenMelhor_p2.pdf.zip)
 
 * Usufrua do nosso forum online neste [link](https://groups.google.com/g/genmelhor_2022) para fazer perguntas sobre o pacote e sobre "enviromics" de um modo geral. Esse forum é exclusivo para os participantes do curso e ficará aberto "para sempre". Codigos detalhados (em R) tambem serao disponibilizados nesse forum.
  
